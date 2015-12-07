@@ -1,0 +1,98 @@
+NAME
+    METS::DjVu - Class for METS DjVu manipulation.
+
+SYNOPSIS
+     use METS::DjVu;
+     my $obj = METS::DjVu->new;
+     my @djvu_files = $obj->get_djvu_files($mets_data);
+
+METHODS
+    "new()"
+             Constructor.
+
+    "get_djvu_files($mets_data)"
+             Parse METS
+             Parse XML data via XML::Simple::XMLin().
+             Returns hash reference to structure.
+
+ERRORS
+     new():
+             From Class::Utils::set_params():
+                     Unknown parameter '%s'.
+
+EXAMPLE1
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Data::Printer;
+     use METS::DjVu;
+     use Perl6::Slurp qw(slurp);
+
+     # Arguments.
+     if (@ARGV < 1) {
+             print STDERR "Usage: $0 $mets_file\n";
+             exit 1;
+     }
+     my $mets_file = $ARGV[0];
+
+     # Get mets data.
+     my $mets_data = slurp($mets_file);
+
+     # Object.
+     my $obj = METS::DjVu->new;
+
+     # Get DjVu files.
+     my @djvu_files = $obj->get_djvu_files($mets_data);
+
+     # Dump to output.
+     p @djvu_files;
+
+     # Output like:
+     # TODO
+
+EXAMPLE2
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Data::Printer;
+     use METS::DjVu;
+
+     # Example METS data.
+     my $mets_data <<'END';
+     TODO
+     END
+
+     # Object.
+     my $obj = METS::DjVu->new;
+
+     # Get DjVu files.
+     my @djvu_files = $obj->get_djvu_files($mets_data);
+
+     # Dump to output.
+     p $djvu_files;
+
+     # Output like:
+     # TODO
+
+DEPENDENCIES
+    Class::Utils, METS::Parse.
+
+REPOSITORY
+    <https://github.com/tupinek/METS-DjVu>
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+     © Michal Špaček 2015
+     BSD 2-Clause License
+
+VERSION
+    0.01
+
