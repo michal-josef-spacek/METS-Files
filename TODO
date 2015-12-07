@@ -2,7 +2,10 @@ TODO
 ====
 1. Konverze z METS souboru do djvu je jednoducha
    - Vytahnout vsechny djvu stranek a spojit dohromady.
-2.
+2. Prejmenovat get_djvu_files na get_djvu_img.
+3. Pridat get_djvu_txt.
+4. Pridat get_djvu_*
+5.
 
 Applied
 =======
