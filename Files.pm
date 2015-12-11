@@ -29,8 +29,7 @@ sub get_img_files {
 	my ($self, $mets_data) = @_;
 
 	# Parse METS file.
-	my $mets_parser = METS::Parse->new;
-	my $mets_hr = $mets_parser->parse($mets_data);
+	my $mets_hr = METS::Parse->new->parse($mets_data);
 
 	# Filter img files.
 	my @djvu_files;
