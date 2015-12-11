@@ -1,4 +1,4 @@
-package METS::DjVu;
+package METS::Files;
 
 # Pragmas.
 use strict;
@@ -24,15 +24,15 @@ sub new {
 	return $self;
 }
 
-# Get DjVu files.
-sub get_djvu_files {
+# Get img files.
+sub get_img_files {
 	my ($self, $mets_data) = @_;
 
 	# Parse METS file.
 	my $mets_parser = METS::Parse->new;
 	my $mets_hr = $mets_parser->parse($mets_data);
 
-	# Filter DjVu files.
+	# Filter img files.
 	my @djvu_files;
 	if (exists $mets_hr->{'mets:fileSec'}
 		&& exists $mets_hr->{'mets:fileSec'}->{'mets:fileGrp'}) {
@@ -47,7 +47,6 @@ sub get_djvu_files {
 			}
 		}
 	}
-
 	return @djvu_files;
 }
 
@@ -61,12 +60,12 @@ __END__
 
 =head1 NAME
 
-METS::DjVu - Class for METS DjVu manipulation.
+METS::Files - Class for METS files manipulation.
 
 =head1 SYNOPSIS
 
- use METS::DjVu;
- my $obj = METS::DjVu->new;
+ use METS::Files;
+ my $obj = METS::Files->new;
  my @djvu_files = $obj->get_djvu_files($mets_data);
 
 =head1 METHODS
@@ -99,7 +98,7 @@ METS::DjVu - Class for METS DjVu manipulation.
 
  # Modules.
  use Data::Printer;
- use METS::DjVu;
+ use METS::Files;
  use Perl6::Slurp qw(slurp);
 
  # Arguments.
@@ -113,13 +112,13 @@ METS::DjVu - Class for METS DjVu manipulation.
  my $mets_data = slurp($mets_file);
 
  # Object.
- my $obj = METS::DjVu->new;
+ my $obj = METS::Files->new;
 
- # Get DjVu files.
- my @djvu_files = $obj->get_djvu_files($mets_data);
+ # Get img files.
+ my @img_files = $obj->get_img_files($mets_data);
 
  # Dump to output.
- p @djvu_files;
+ p @img_files;
 
  # Output like:
  # TODO
@@ -132,7 +131,7 @@ METS::DjVu - Class for METS DjVu manipulation.
 
  # Modules.
  use Data::Printer;
- use METS::DjVu;
+ use METS::Files;
 
  # Example METS data.
  my $mets_data <<'END';
@@ -140,13 +139,13 @@ METS::DjVu - Class for METS DjVu manipulation.
  END
 
  # Object.
- my $obj = METS::DjVu->new;
+ my $obj = METS::Files->new;
 
- # Get DjVu files.
- my @djvu_files = $obj->get_djvu_files($mets_data);
+ # Get img files.
+ my @img_files = $obj->get_img_files($mets_data);
 
  # Dump to output.
- p $djvu_files;
+ p @img_files;
 
  # Output like:
  # TODO
@@ -158,7 +157,7 @@ L<METS::Parse>.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/METS-DjVu>
+L<https://github.com/tupinek/METS-Files>
 
 =head1 AUTHOR
 

@@ -1,11 +1,16 @@
 TODO
 ====
-1. Konverze z METS souboru do djvu je jednoducha
-   - Vytahnout vsechny djvu stranek a spojit dohromady.
-2. Prejmenovat get_djvu_files na get_djvu_img.
-3. Pridat get_djvu_txt.
-4. Pridat get_djvu_*
+3. Pridat get_txt.
+4. Pridat get_*
 5.
 
 Applied
 =======
+2. Prejmenovat get_djvu_files na get_djvu_img.
+OK [20151211] skim
+
+1. Konverze z METS souboru do djvu je jednoducha
+   - Vytahnout vsechny djvu stranek a spojit dohromady.
+   Pouzit DjVu-File-Merge
+Neni veci tohoto modulu.
+NONE [20151211] skim

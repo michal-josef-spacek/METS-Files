@@ -7,4 +7,4 @@ use Test::NoWarnings;
 use Test::Pod::Coverage 'tests' => 2;
 
 # Test.
-pod_coverage_ok('METS::DjVu', 'METS::DjVu is covered.');
+pod_coverage_ok('METS::Files', 'METS::Files is covered.');

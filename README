@@ -1,9 +1,9 @@
 NAME
-    METS::DjVu - Class for METS DjVu manipulation.
+    METS::Files - Class for METS files manipulation.
 
 SYNOPSIS
-     use METS::DjVu;
-     my $obj = METS::DjVu->new;
+     use METS::Files;
+     my $obj = METS::Files->new;
      my @djvu_files = $obj->get_djvu_files($mets_data);
 
 METHODS
@@ -27,7 +27,7 @@ EXAMPLE1
 
      # Modules.
      use Data::Printer;
-     use METS::DjVu;
+     use METS::Files;
      use Perl6::Slurp qw(slurp);
 
      # Arguments.
@@ -41,13 +41,13 @@ EXAMPLE1
      my $mets_data = slurp($mets_file);
 
      # Object.
-     my $obj = METS::DjVu->new;
+     my $obj = METS::Files->new;
 
-     # Get DjVu files.
-     my @djvu_files = $obj->get_djvu_files($mets_data);
+     # Get img files.
+     my @img_files = $obj->get_img_files($mets_data);
 
      # Dump to output.
-     p @djvu_files;
+     p @img_files;
 
      # Output like:
      # TODO
@@ -59,7 +59,7 @@ EXAMPLE2
 
      # Modules.
      use Data::Printer;
-     use METS::DjVu;
+     use METS::Files;
 
      # Example METS data.
      my $mets_data <<'END';
@@ -67,13 +67,13 @@ EXAMPLE2
      END
 
      # Object.
-     my $obj = METS::DjVu->new;
+     my $obj = METS::Files->new;
 
-     # Get DjVu files.
-     my @djvu_files = $obj->get_djvu_files($mets_data);
+     # Get img files.
+     my @img_files = $obj->get_img_files($mets_data);
 
      # Dump to output.
-     p $djvu_files;
+     p @img_files;
 
      # Output like:
      # TODO
@@ -82,7 +82,7 @@ DEPENDENCIES
     Class::Utils, METS::Parse.
 
 REPOSITORY
-    <https://github.com/tupinek/METS-DjVu>
+    <https://github.com/tupinek/METS-Files>
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>

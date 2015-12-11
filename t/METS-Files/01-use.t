@@ -9,8 +9,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('METS::DjVu');
+	use_ok('METS::Files');
 }
 
 # Test.
-require_ok('METS::DjVu');
+require_ok('METS::Files');

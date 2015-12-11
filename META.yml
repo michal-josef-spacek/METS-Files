@@ -1,5 +1,5 @@
 ---
-abstract: 'Create DjVu files from METS specification.'
+abstract: 'Get page files from METS specification.'
 author:
   - 'Michal Spacek <skim@cpan.org>'
 build_requires:
@@ -15,15 +15,15 @@ license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: METS-DjVu
+name: METS-Files
 no_index:
   directory:
     - inc
     - t
     - xt
 resources:
-  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=METS-DjVu
-  homepage: https://github.com/tupinek/METS-DjVu
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=METS-Files
+  homepage: https://github.com/tupinek/METS-Files
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/METS-DjVu
+  repository: git://github.com/tupinek/METS-Files
 version: '0.01'
