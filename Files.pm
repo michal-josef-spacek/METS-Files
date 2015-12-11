@@ -32,21 +32,27 @@ sub get_img_files {
 	my $mets_hr = METS::Parse->new->parse($mets_data);
 
 	# Filter img files.
-	my @djvu_files;
+	return $self->_get_files($mets_hr, 'img');
+}
+
+# Get common type.
+sub _get_files {
+	my ($self, $mets_hr, $type) = @_;
+	my @files;
 	if (exists $mets_hr->{'mets:fileSec'}
 		&& exists $mets_hr->{'mets:fileSec'}->{'mets:fileGrp'}) {
 
 		foreach my $mets_file_grp_hr (@{$mets_hr->{'mets:fileSec'}
 			->{'mets:fileGrp'}}) {
 
-			if ($mets_file_grp_hr->{'USE'} eq 'img') {
+			if ($mets_file_grp_hr->{'USE'} eq $type) {
 				foreach my $file_hr (@{$mets_file_grp_hr->{'mets:file'}}) {
-					push @djvu_files, $file_hr->{'mets:FLocat'}->{'xlink:href'};
+					push @files, $file_hr->{'mets:FLocat'}->{'xlink:href'};
 				}
 			}
 		}
 	}
-	return @djvu_files;
+	return @files;
 }
 
 1;
