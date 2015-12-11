@@ -65,7 +65,7 @@ METS::Files - Class for METS files manipulation.
 
  use METS::Files;
  my $obj = METS::Files->new;
- my @djvu_files = $obj->get_djvu_files($mets_data);
+ my @img_files = $obj->get_img_files($mets_data);
 
 =head1 METHODS
 
@@ -75,11 +75,10 @@ METS::Files - Class for METS files manipulation.
 
  Constructor.
 
-=item C<get_djvu_files($mets_data)>
+=item C<get_img_files($mets_data)>
 
- Parse METS
- Parse XML data via XML::Simple::XMLin().
- Returns hash reference to structure.
+ Get img files.
+ Returns array with files.
 
 =back
 
