@@ -6,7 +6,7 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
-use METS::Parse;
+use METS::Parse::Simple;
 
 # Version.
 our $VERSION = 0.01;
@@ -29,7 +29,7 @@ sub get_img_files {
 	my ($self, $mets_data) = @_;
 
 	# Parse METS file.
-	my $mets_hr = METS::Parse->new->parse($mets_data);
+	my $mets_hr = METS::Parse::Simple->new->parse($mets_data);
 
 	# Filter img files.
 	return $self->_get_files($mets_hr, 'img');
@@ -157,7 +157,7 @@ METS::Files - Class for METS files manipulation.
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
-L<METS::Parse>.
+L<METS::Parse::Simple>.
 
 =head1 REPOSITORY
 

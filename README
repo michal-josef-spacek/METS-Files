@@ -79,7 +79,7 @@ EXAMPLE2
      # TODO
 
 DEPENDENCIES
-    Class::Utils, METS::Parse.
+    Class::Utils, METS::Parse::Simple.
 
 REPOSITORY
     <https://github.com/tupinek/METS-Files>
