@@ -1,10 +1,8 @@
 TODO
 ====
-3. Pridat get_txt.
-4. Pridat get_*
-5. Pridat get file types.
-6. Cache naparsovane informace.
-7.
+7. Udelat testy.
+8. Promyslet, co by mel delat Parser a prepsat na tu verzi.
+9.
 
 Applied
 =======
@@ -16,3 +14,16 @@ OK [20151211] skim
    Pouzit DjVu-File-Merge
 Neni veci tohoto modulu.
 NONE [20151211] skim
+
+3. Pridat get_txt.
+NONE [20151223] skim
+
+4. Pridat get_*
+NONE [20151223] skim
+
+5. Pridat get file types.
+OK [20151223] skim
+
+6. Cache naparsovane informace.
+Kazdy objekt ma sve data.
+OK [20151223] skim
