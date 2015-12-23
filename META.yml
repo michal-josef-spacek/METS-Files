@@ -18,6 +18,7 @@ meta-spec:
 name: METS-Files
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
