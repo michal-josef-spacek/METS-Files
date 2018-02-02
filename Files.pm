@@ -1,19 +1,15 @@
 package METS::Files;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use METS::Parse::Simple;
 use Readonly;
 
-# Constants.
 Readonly::Scalar our $EMPTY_STR => q{};
 
-# Version.
 our $VERSION = 0.01;
 
 # Constructor.
@@ -150,11 +146,9 @@ METS::Files - Class for METS files manipulation.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Data::Printer;
  use METS::Files;
  use Perl6::Slurp qw(slurp);
@@ -188,11 +182,9 @@ METS::Files - Class for METS files manipulation.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Data::Printer;
  use METS::Files;
 
