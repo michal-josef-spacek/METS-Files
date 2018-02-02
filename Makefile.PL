@@ -17,9 +17,10 @@ license 'bsd';
 name 'METS-Files';
 readme_from 'Files.pm';
 recursive_author_tests('xt');
-#requires 'Class::Utils' => 0.05;
-#requires 'Error::Pure' => 0.16;
+requires 'Class::Utils' => 0.05;
+requires 'Error::Pure' => 0.16;
 requires 'METS::Parse::Simple' => 0.01;
+requires 'Readonly' => 0;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=METS-Files';
