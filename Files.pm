@@ -253,13 +253,13 @@ L<https://github.com/tupinek/METS-Files>
 
 =head1 AUTHOR
 
-Michal Špaček L<mailto:skim@cpan.org>
+Michal Josef Špaček L<mailto:skim@cpan.org>
 
 L<http://skim.cz>
 
 =head1 LICENSE AND COPYRIGHT
 
- © Michal Špaček 2015-2018
+ © Michal Josef Špaček 2015-2018
  BSD 2-Clause License
 
 =head1 VERSION
