@@ -130,7 +130,7 @@ DEPENDENCIES
     Class::Utils, Error::Pure, METS::Parse::Simple, Readonly.
 
 REPOSITORY
-    <https://github.com/tupinek/METS-Files>
+    <https://github.com/michal-josef-spacek/METS-Files>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>

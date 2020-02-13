@@ -249,7 +249,7 @@ L<Readonly>.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/METS-Files>
+L<https://github.com/michal-josef-spacek/METS-Files>
 
 =head1 AUTHOR
 
