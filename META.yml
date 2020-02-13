@@ -23,7 +23,10 @@ no_index:
     - t
     - xt
 requires:
+  Class::Utils: 0.05
+  Error::Pure: 0.16
   METS::Parse::Simple: 0.01
+  Readonly: 0
   perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=METS-Files
