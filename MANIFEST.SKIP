@@ -9,5 +9,6 @@ TODO
 CONCEPT
 MANIFEST.SKIP
 MYMETA.json
+MYMETA.json.lock
 MYMETA.yml
 .travis.yml
