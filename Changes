@@ -1,4 +1,4 @@
-0.02
+0.02 2022-08-27T00:29:10+02:00
  - Add tests for constructor.
  - Improve SYNOPSIS section in doc.
  - Rename example files to better names.
