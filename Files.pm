@@ -43,6 +43,7 @@ sub new {
 # Get img files.
 sub get_use_files {
 	my ($self, $use) = @_;
+
 	my @files;
 	if (exists $self->{'_mets'}->{$self->{'_prefix'}.'fileSec'}
 		&& exists $self->{'_mets'}->{$self->{'_prefix'}.'fileSec'}
@@ -63,6 +64,7 @@ sub get_use_files {
 			}
 		}
 	}
+
 	return @files;
 }
 
