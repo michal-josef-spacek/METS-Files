@@ -149,6 +149,8 @@ METS::Files - Class for METS files manipulation.
 
 =head1 EXAMPLE1
 
+=for comment filename=extract_mets_files.pl
+
  use strict;
  use warnings;
 
@@ -184,6 +186,8 @@ METS::Files - Class for METS files manipulation.
  # Usage: __SCRIPT__ mets_file
 
 =head1 EXAMPLE2
+
+=for comment filename=extract_mets_files_inline.pl
 
  use strict;
  use warnings;

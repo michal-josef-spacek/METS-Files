@@ -1,6 +1,7 @@
 0.02
  - Add tests for constructor.
  - Improve SYNOPSIS section in doc.
+ - Rename example files to better names.
  - Unify LICENSE AND COPYRIGHT section in doc to my style.
  - Update copyright years.
 
