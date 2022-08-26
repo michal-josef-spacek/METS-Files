@@ -101,6 +101,7 @@ METS::Files - Class for METS files manipulation.
 =head1 SYNOPSIS
 
  use METS::Files;
+
  my $obj = METS::Files->new(
          'mets_data' => $mets_data,
  );

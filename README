@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use METS::Files;
+
      my $obj = METS::Files->new(
              'mets_data' => $mets_data,
      );
