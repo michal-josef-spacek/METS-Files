@@ -1,5 +1,6 @@
 0.03
  - Update Module::Install to 1.21 version.
+ - Update copyright years.
 
 0.02 2022-08-27T00:29:10+02:00
  - Add tests for constructor.
