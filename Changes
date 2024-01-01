@@ -1,4 +1,5 @@
 0.03
+ - Add tests.
  - Update Module::Install to 1.21 version.
  - Update copyright years.
 
