@@ -112,33 +112,41 @@ METS::Files - Class for METS files manipulation.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new()>
+ my $obj = METS::Files->new(
+         'mets_data' => $mets_data,
+ );
 
- Constructor.
+Constructor.
 
 =over 8
 
 =item * C<mets_data>
 
- METS data.
- Parameter is required.
- Default value is undef.
+METS data.
+
+Parameter is required.
 
 =back
 
-=item C<get_use_files($use)>
+Returns instance of object.
 
- Get "USE" files.
- Returns array with files.
+=head2 C<get_use_files>
 
-=item C<get_use_types()>
+ my @files = $obj->get_use_files($use);
 
- Get "USE" types.
- Returns array with types.
+Get "USE" files defined by C<$use> variable.
 
-=back
+Returns array with files.
+
+=head2 C<get_use_types>
+
+ my @types = $obj->get_use_types;
+
+Get "USE" types.
+
+Returns array with types.
 
 =head1 ERRORS
 
